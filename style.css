@@ -1,11 +1,19 @@
 * {
     font-family: 'JetBrains Mono', monospace;
+    
 }
+
+:root {
+    --purple:#B300FF;
+    --pink:#FF1493;
+}
+
 
 .nav-link {
     color: #FF1493 !important;
     transition: color 0.3s ease;
     font-weight: bold;
+    
 }
 
 #logo {
@@ -21,22 +29,31 @@
     width: 90px;
     height: 90px;
     margin-left: 30px;
-    transform: rotate(10deg);
+    transform: rotate(15deg);
 }
 
-#discord-btn {
+.discord-btn {
     background-color: #FF1493;
     color: white;
-    border-radius: 30px;
+    border-radius: 30px !important;
     padding: 10px 20px;
     font-size: 20px;
+    display: inline-block; /* Ajusta a largura ao conteúdo */
+    margin: auto; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    
+    
 }
+
+
+
 
 #box {
     margin-top: 40px;
     height: 400px;
     border: 1px solid #5D9CEC;
     width: 100%; /* Garante que o box se ajustará à largura da tela */
+    margin-bottom: 40px;
 }
 
 #box > .content-text {
@@ -64,6 +81,63 @@
     color: #FF1493;
     font-weight: bold;
 }
+
+main{
+    font-size:20px;
+}
+
+
+section > h2 {
+    color: var(--purple);
+    text-align: left;
+    width: 100%;
+    
+    
+}
+
+main > p {
+    margin-top:20px;
+    
+}
+
+main > section > p > span {
+    color: var(--pink);
+    
+}
+
+
+#about-us {
+    text-align: left; /* Garante que os parágrafos fiquem alinhados à esquerda */
+}
+
+section > a {
+    display:inline-block; /* Permite aplicar o auto no margin */
+    text-align: center; /* Centraliza o botão */
+    margin: 20px auto; /* Centraliza o botão dentro da seção */
+    
+    background-color: rgb(218, 0, 0);
+    text-decoration: none;
+    color: #FF1493;
+}
+
+#team > blockquote{
+    display: block; /* Permite aplicar o auto no margin */
+    text-align: center; /* Centraliza o botão */
+    margin: 20px auto; /* Centraliza o botão dentro da seção */
+}
+
+#team > span {
+
+    color: var(--purple);
+
+}
+
+#imagens > img {
+
+    max-width:200px ;
+
+}
+
 
 /* Mobile specific styles */
 @media (max-width: 768px) {
